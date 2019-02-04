@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // you can add functionality to start searching by clicking enter
     $('#submitButton').click(function () {
         var searchText = $('#searchText').val();
         if(searchText.length>0){
