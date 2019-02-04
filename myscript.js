@@ -19,7 +19,8 @@ function ajaxRequest(term){
         data: {'query': term, 'language' : 'ru-RU', 'api_key': 'd272326e467344029e68e3c4ff0b4059'},
         success: function(data){
             $.each(data.results, function (keyFilm, valFilm) {
-
+// You can show not all properties, also try to show an image (not a path)
+// https://www.themoviedb.org/search?query=home&language=en-US you can see the best example, try to implement something similar                
                 var $filmTable=$('<table align="center"></table>');
                 $.each(valFilm, function(keyAttr, valAttr)
                 {
